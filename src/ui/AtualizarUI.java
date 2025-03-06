@@ -28,8 +28,6 @@ public class AtualizarUI extends javax.swing.JFrame {
 
     public AtualizarUI() {
         initComponents();
-        //this.crudui = crudui;
-        //crudui.setVisible(true);
     }
 
 
@@ -53,11 +51,6 @@ public class AtualizarUI extends javax.swing.JFrame {
         } else {
             jRadioButton2.setSelected(true);
         }
-        
-        
-        
-        //jComboBox1.setSelectedIndex(store_id);
-        //jRadioButton1.setSelected(active);
         
         this.crudui = crudui;
         

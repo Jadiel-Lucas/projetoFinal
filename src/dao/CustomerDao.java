@@ -55,8 +55,6 @@ public class CustomerDao {
                 + " where customer_id=?";
         PreparedStatement pst = con.prepareStatement(sql);
 
-        //Customer c = new Customer(2, "João", "Santos", "jg.santos@outlook.com", 10, 1);
-
         pst.setInt(1, c.getStore_id());
         pst.setString(2, c.getFirst_name());
         pst.setString(3, c.getLast_name());
@@ -99,23 +97,6 @@ public class CustomerDao {
         }
         
         st.close();
-        
-        /*ResultSetMetaData md = rs.getMetaData();
-        int col = md.getColumnCount();
-
-        //System.out.println("Tabela: " + md.getTableName(1));
-        for (int i = 1; i <= col; i++) {
-            //System.out.print(md.getColumnName(i) + "\t");
-        }
-        //System.out.println("");
-
-        while (rs.next()) {
-            for (int i = 1; i <= col; i++) {
-                //System.out.print(rs.getString(i) + "\t");
-            }
-            //System.out.println("");
-        }
-*/
         
     }
 
